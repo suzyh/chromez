@@ -23,6 +23,7 @@
   "cz-regression-dash",
   "cz-review-latency-dash(false)",
   "cz-review-load-dash",
+  "cz-graph-feed-source",
   "cz-shields-dash(web-animations-next)"
 ],
 "timezones": [
@@ -46,6 +47,16 @@
   "Web Animations Polyfill": {
     "tag": "cz-github-issues",
     "query": {"repo": "web-animations/web-animations-js"}
+  }
+},
+"graph-sources": {
+  "all issue score": {
+    "heading": "DEF",
+    "source": "https://docs.google.com/a/google.com/spreadsheets/d/1rGOTr8Fr7ojLNMCThTT_saXmMomepaJ1pCP4d8HWTyY/pubchart?oid=369737749&amp;format=image"
+  },
+  "sub-quarterly score": {
+    "heading": "",
+    "source": "https://docs.google.com/a/google.com/spreadsheets/d/1rGOTr8Fr7ojLNMCThTT_saXmMomepaJ1pCP4d8HWTyY/pubchart?oid=2017104650&amp;format=image"
   }
 }
 }

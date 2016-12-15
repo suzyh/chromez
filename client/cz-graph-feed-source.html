@@ -1,0 +1,59 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../bower_components/paper-item/paper-item-body.html">
+
+<link rel="import" href="cz-graph-card.html">
+
+<dom-module id="cz-graph-feed-source">
+
+  <template>
+  </template>
+
+  <script>
+    Polymer({
+      is: "cz-graph-feed-source",
+
+      properties: {
+        graphs: {
+          type: 'Object',
+          value: function() { return []; },
+          observer: "graphsChanged"
+        }
+      },
+
+      created: function() {
+        //this.cards = [];
+      },
+
+      attached: function() {
+        registerSource('cz-config', 'graph-sources', function(graphConfig) {
+          var graphs = [];
+          for (var key in graphConfig) {
+            graphs.push(graphConfig[key]);
+          }
+          this.set('graphs', graphs);
+        }.bind(this));
+      },
+
+      graphsChanged: function(graphs) {
+        /*
+        this.cards.forEach(function(card, idx) {
+          removeCard(card);
+        }.bind(this));
+        console.log(this.cards);
+        this.set('cards', []);
+        console.log(this.cards);
+        */
+        graphs.forEach(function(graph, idx) {
+          var card = document.createElement("cz-graph-card");
+          //card.priority = 'high';
+          card.graph = graph;
+          addCard(card);
+          //this.cards.push(card);
+        }.bind(this));
+      },
+
+    });
+  </script>
+</dom-module>

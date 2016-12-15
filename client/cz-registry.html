@@ -23,7 +23,7 @@
       },
 
       attached: function() {
-        this.async(this.update, 300000);
+        this.async(this.update, 10000);
       },
 
       update: function() {
@@ -31,7 +31,7 @@
         for (var i = 0; i < sources.length; i++) {
           sources[i].update && sources[i].update();
         }
-        this.async(this.update, 300000);
+        this.async(this.update, 10000);
       },
 
       registerSource: function(type, query, callback) {
