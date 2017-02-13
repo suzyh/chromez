@@ -4,7 +4,11 @@
   {"user": "Eric", "email": "ericwilligers@chromium.org", "github": "ewilligers"},
   {"user": "Alan", "email": "alancutter@chromium.org", "github": "alancutter"},
   {"user": "Suzy", "email": "suzyh@chromium.org", "github": "suzyh"},
-  {"user": "Alexey", "email": "loyso@chromium.org", "github": "loyso"}
+  {"user": "Alexey", "email": "loyso@chromium.org", "github": "loyso"},
+  {"user": "Naina", "email": "nainar@chromium.org"},
+  {"user": "Bugs", "email": "bugsnash@chromium.org"},
+  {"user": "Renee", "email": "rjwright@chromium.org"},
+  {"user": "Eddy", "email": "meade@chromium.org"}
 ],
 "components": {
   "animation": "Blink>Animation"

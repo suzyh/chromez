@@ -1,0 +1,40 @@
+{"cardview-heading": "This is Style Street",
+"cardview-columns": 1,
+"users": [
+  {"user": "Eric", "email": "ericwilligers@chromium.org"},
+  {"user": "Alan", "email": "alancutter@chromium.org"},
+  {"user": "Naina", "email": "nainar@chromium.org"},
+  {"user": "Suzy", "email": "suzyh@chromium.org"},
+  {"user": "Bugs", "email": "bugsnash@chromium.org"},
+  {"user": "Renee", "email": "rjwright@chromium.org"},
+  {"user": "Eddy", "email": "meade@chromium.org"}
+],
+"components": {
+  "css": "Blink>CSS"
+},
+"updateSLO": {
+  "daily": "1",
+  "weekly": "7",
+  "fortnightly": "14",
+  "monthly": "30"
+},
+"dashes": [
+  "cz-clock-dash",
+  "cz-component-dash(Blink CSS)",
+  "cz-regression-dash",
+  "cz-review-latency-dash(true)",
+  "cz-review-load-dash"
+],
+"timezones": [
+  {"city": "MTV", "timezone": "US/Pacific"},
+  {"city": "Waterloo", "timezone": "America/Nipigon"},
+  {"city": "Tokyo", "timezone": "Asia/Tokyo"},
+  {"city": "Sydney", "timezone": "Australia/Sydney", "local": true}
+  ],
+"issue-sources": {
+  "Blink CSS": {
+    "tag": "cz-crbug-issues",
+    "query": {"component": "Blink>CSS"}
+  }
+}
+}
